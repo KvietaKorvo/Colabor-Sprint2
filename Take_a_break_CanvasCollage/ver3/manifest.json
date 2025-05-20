@@ -1,0 +1,14 @@
+{
+  "manifest_version": 3,
+  "name": "Take a Break Canvas Collage",
+  "version": "1.0",
+  "description": "Szétszórt karakterek állnak össze egy szöveggé, kollázsszerűen.",
+  "permissions": ["scripting"],
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["content.js"],
+      "run_at": "document_idle"
+    }
+  ]
+}

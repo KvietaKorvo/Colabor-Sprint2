@@ -1,0 +1,14 @@
+{
+  "manifest_version": 3,
+  "name": "Take a Break Canvas Collage",
+  "version": "1.1",
+  "description": "Three-part reminder: Take a break, drink water, and meditate with a calm breathing circle.",
+  "permissions": ["scripting"],
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["content.js"],
+      "run_at": "document_idle"
+    }
+  ]
+}
